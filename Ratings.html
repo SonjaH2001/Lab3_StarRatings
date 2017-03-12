@@ -6,10 +6,37 @@
 </head>
 
 <body>
+    <h2>Movies with Awesome Soundtracks</h2>
+        <p>The Good, the Bad and the Ugly <span id="fiveStar"><em>  5 stars</em></span> </p>
+        <p>Repo Man <span id="twoStar"><em>  2 stars</em></span></p>
+        <p>Trainspotting <span id="threeStar"><em>  3 stars</em></span></p>
+        <p>Ray <span id="fourStar"><em> 4 stars</em></span></p>
 
-<p>The Good, the Bad and the Ugly<span class="rating">5 stars</span> </p>
-<p>Repo Man<span class="rating">3 stars</span></p>
-<p>Trainspotting<span class="rating">3 stars</span></p>
+<script>
+//    my lame attempt to make the items unique.
+//working on a function the use span class
+    document.getElementById("fiveStar").innerHTML = ('\u2605' + '\u2605' + '\u2605' + '\u2605' + '\u2605');
+    document.getElementById("fourStar").innerHTML = ('\u2605'+ '\u2605' + '\u2605' + '\u2605');
+    document.getElementById("threeStar").innerHTML = ('\u2605'+ '\u2605' + '\u2605');
+    document.getElementById("twoStar").innerHTML = ('\u2605'+ '\u2605');
+
+//this was my first attempt, super cool with the mouseover and moueeout.  BUT did
+    //not show stars.  I had this in a list, and used span class.
+//    var movieListItems = document.getElementsByClassName("rating");
+//
+//    for (var i = 0; i < movieListItems.length; i++ ) {
+//        movieListItems[i].addEventListener("mouseover", changeStar);
+//        movieListItems[i].addEventListener("mouseout", reset)
+//    }
+//
+//    function changeStar() {
+//        this.style.color = "red";
+//    }
+//    function reset() {
+//        this.style.color = "black"
+//    }
+
+</script>
 
 </body>
 </html>
